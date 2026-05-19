@@ -1,9 +1,9 @@
 # 根据提供的论文<Transcriptional regulation of nitrogen-associated metabolism and growt》的内容,我对该研究的可重现性以及每个图的重现难度和文本说明进行了分析。
 
 ## 1.组员
-+ 王家傲2025303120130
-+ 窦佳艺2025303110105 https://github.com/Doujiayi-2025
-+ 周奕楠2025303120083
++ 王家傲2025303120130 https://github.com/okbk130
++ 窦佳艺2025303110105 https://github.com/doujiayi-2025
++ 周奕楠2025303120083 https://github.com/pidan431
 + 陈宇豪2025303110108 https://github.com/chenyuhaobio
 + 毕嘉榆2025303110101 https://github.com/Bijiayu-yyds
 2. 可重现性总体评估
