@@ -2,10 +2,10 @@
 
 ## 1.组员
 + 王家傲2025303120130
-+ 窦佳艺2025303110105
++ 窦佳艺2025303110105 https://github.com/Doujiayi-2025
 + 周奕楠2025303120083
-+ 陈宇豪2025303110108
-+ 毕嘉榆2025303110101https://github.com/Bijiayu-yyds
++ 陈宇豪2025303110108 https://github.com/chenyuhaobio
++ 毕嘉榆2025303110101 https://github.com/Bijiayu-yyds
 2. 可重现性总体评估
 ## 2. 可重现性总体评估
 
