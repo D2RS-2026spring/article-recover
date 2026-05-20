@@ -10,9 +10,9 @@
 2. 可重现性总体评估
 ## 2. 可重现性总体评估
 
-论文《Transcriptional regulation of nitrogen-associated metabolism and growth》发表在2018年的Nature杂志上，其原始数据处于文章末尾，分析代码在Github上发布https://github.com/agaudinier/Gaudinier2018。其可重现性总体上较好，但不同图件所对应的方法层级差异较大。原文公开了 RNA-seq 数据的 accession（GSE107988），同时提供了 Supplementary Tables、R code 和 Cytoscape files，这使得结果复核、网络再导出以及部分统计图重建成为可能。尤其对于基于补充表的 Figure 5a、Figure 5b/c，用户可以较直接地依赖表格数据完成再统计和再绘图。
+论文《Transcriptional regulation of nitrogen-associated metabolism and growth》发表在2018年的Nature杂志上，其原始数据处于文章末尾，分析代码在Github上发布https://github.com/agaudinier/Gaudinier2018。其可重现性总体上较好，但不同图件所对应的方法层级差异较大。原文公开了 RNA-seq 数据的 accession（GSE107988），同时提供了 Supplementary Tables、R code 和 Cytoscape files，这使得结果复核、网络再导出以及部分统计图重建成为可能。尤其对于基于补充表的 Figure 5a、Figure 5b/c，可以较直接地依赖表格数据完成再统计和再绘图。
 
-但从方法学深度来看，Fig. 1a、1b、4a 的“完全复现”并不只是绘图问题，而涉及增强型 yeast one-hybrid（Y1H）筛选、公开氮响应转录组数据整合、TF–target 相关性分析、NeCORR 排名、Gini 相关显著性分析以及 Cytoscape 网络可视化等多个步骤。Supplementary Information 中明确给出了被筛选的 promoter、TF–promoter 互作、公开表达数据集、相关性分析结果以及 NeCORR 排名所依赖的数据结构，说明作者在数据共享方面较充分；但这些图若要从头严格复现，仍需要较强的实验与生信整合能力，因此其真实重现门槛并不低。
+但从实际操作方面看，Fig. 1a、1b、4a 的“完全复现”并不只是绘图问题，而涉及增强型酵母单杂（Y1H）筛选、公开氮响应转录组数据整合、TF–target 相关性分析、NeCORR 排名、Gini 相关显著性分析以及 Cytoscape 网络可视化等多个步骤。Supplementary Information 中明确给出了被筛选的 promoter、TF–promoter 互作、公开表达数据集、相关性分析结果以及 NeCORR 排名所依赖的数据结构，说明作者在数据共享方面较充分；但这些图若要从头严格复现，仍需要较强的实验与生信整合能力，因此其真实重现门槛并不低。
 
 
 ---
@@ -22,7 +22,7 @@
 ### Figure 1a — 氮代谢相关启动子与转录因子的组合式互作网络
 
 **文本说明：**  
-该图展示的是与氮代谢、氮信号传导及其他氮相关生物过程有关的基因启动子，与大量转录因子之间的组合式调控关系网络。按照原文方法，这一图首先不是由表达矩阵直接绘制出来的，而是基于增强型 yeast one-hybrid（enhanced Y1H）筛选获得 TF–promoter 相互作用，再将结果组织成网络图。Supplementary Information 显示，作者对一组氮相关启动子进行了 Y1H 筛选，并整理了 TF–promoter interactions；图中矩形代表 promoter，椭圆代表 transcription factor，菱形代表同时兼具 promoter 与 TF 身份的基因，节点颜色对应不同氮相关生物过程，灰色连线表示 TF–promoter 结合关系。也就是说，Fig. 1a 的本质是实验筛选得到的调控互作网络可视化结果。
+该图展示的是与氮代谢、氮信号传导及其他氮相关生物过程有关的基因启动子，与大量转录因子之间的组合式调控关系网络。按照原文方法，这一图首先不是由表达矩阵直接绘制出来的，而是基于增强型酵母单杂（enhanced Y1H）筛选获得 TF–promoter 相互作用，再将结果组织成网络图。Supplementary Information 显示，作者对一组氮相关启动子进行了 Y1H 筛选，并整理了 TF–promoter interactions；图中矩形代表 promoter，椭圆代表 transcription factor，菱形代表同时兼具 promoter 与 TF 身份的基因，节点颜色对应不同氮相关生物过程，灰色连线表示 TF–promoter 结合关系。也就是说，Fig. 1a 的本质是实验筛选得到的调控互作网络可视化结果。
 
 **重现难度：较高。**  
 如果只是复核结果并重新导出图形，难度不算高；但若严格按照原文方法从头复现，则需要获得同样的 promoter 集合、TF 文库以及增强型 Y1H 筛选结果，再在 Cytoscape 中完成网络组织和版式调整。这意味着它并不是单纯依赖代码即可完整重建的图，而是带有明显实验基础的网络图。
