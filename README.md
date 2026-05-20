@@ -1,5 +1,5 @@
 # 根据提供的论文<Transcriptional regulation of nitrogen-associated metabolism and growt》的内容,我对该研究的可重现性以及每个图的重现难度和文本说明进行了分析。
-文章链接：Transcriptional regulation of nitrogen-associated metabolism and growth | Nature
+文章链接：https://www.nature.com/articles/s41586-018-0656-3
 
 ## 1.组员
 + 王家傲2025303120130 https://github.com/okbk130
