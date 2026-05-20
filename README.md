@@ -9,7 +9,7 @@
 2. 可重现性总体评估
 ## 2. 可重现性总体评估
 
-论文《Transcriptional regulation of nitrogen-associated metabolism and growth》的可重现性总体上较好，但不同图件所对应的方法层级差异较大。原文公开了 RNA-seq 数据的 accession（GSE107988），同时提供了 Supplementary Tables、R code 和 Cytoscape files，这使得结果复核、网络再导出以及部分统计图重建成为可能。尤其对于基于补充表的 Figure 5a、Figure 5b/c，用户可以较直接地依赖表格数据完成再统计和再绘图。
+论文《Transcriptional regulation of nitrogen-associated metabolism and growth》发表在2018年的Nature杂志上，其原始数据处于文章末尾，分析代码在Github上发布https://github.com/agaudinier/Gaudinier2018。其可重现性总体上较好，但不同图件所对应的方法层级差异较大。原文公开了 RNA-seq 数据的 accession（GSE107988），同时提供了 Supplementary Tables、R code 和 Cytoscape files，这使得结果复核、网络再导出以及部分统计图重建成为可能。尤其对于基于补充表的 Figure 5a、Figure 5b/c，用户可以较直接地依赖表格数据完成再统计和再绘图。
 
 但从方法学深度来看，Fig. 1a、1b、4a 的“完全复现”并不只是绘图问题，而涉及增强型 yeast one-hybrid（Y1H）筛选、公开氮响应转录组数据整合、TF–target 相关性分析、NeCORR 排名、Gini 相关显著性分析以及 Cytoscape 网络可视化等多个步骤。Supplementary Information 中明确给出了被筛选的 promoter、TF–promoter 互作、公开表达数据集、相关性分析结果以及 NeCORR 排名所依赖的数据结构，说明作者在数据共享方面较充分；但这些图若要从头严格复现，仍需要较强的实验与生信整合能力，因此其真实重现门槛并不低。
 
